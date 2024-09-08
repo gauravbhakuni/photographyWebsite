@@ -108,7 +108,7 @@ const Contact = () => {
           {/* Submit Button */}
           <button
             type='submit'
-            className='w-full bg-primary-500 text-white py-2 px-4 rounded-lg shadow-sm hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500'
+            className='w-full bg-black text-white py-2 px-4 rounded-lg shadow-sm hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500'
           >
             Send Message
           </button>

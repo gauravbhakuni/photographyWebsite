@@ -11,6 +11,10 @@ body {
   @apply bg-primary;
 }
 
+header {
+  z-index: 999;
+}
+
 .hero-block-carousel-wrapper {
   overflow: hidden;
 }

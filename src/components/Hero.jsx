@@ -28,7 +28,7 @@ const Hero = () => {
           <BoxReveal boxColor="#5046e6" duration={0.5}>
             <h2 className="mt-[.5rem] text-xl md:text-3xl">
               Explore the world through the lens of a{" "}
-              <span className="text-white">Photographer</span>
+              <span className="text-blue-500">Photographer</span>
             </h2>
           </BoxReveal>
           <BoxReveal boxColor="#5046e6" duration={0.5}>

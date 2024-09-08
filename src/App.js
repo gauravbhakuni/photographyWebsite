@@ -11,9 +11,9 @@ import Contact from './components/Contact';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen relative">
+      <div className="min-h-screen">
         <Header />
-        <main className="pt-20">
+        <main className="mt-20">
           <Routes >
             <Route path="/" element={<Hero />} />
             <Route path="/about" element={<About />} />

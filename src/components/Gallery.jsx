@@ -36,11 +36,10 @@ const images = [
 ];
 
 const getRandomSize = () => {
-  const sizes = ['w-40', 'w-48', 'w-56', 'w-64', 'w-72', 'w-80', 'w-96'];
-  const heights = ['h-40', 'h-48', 'h-56', 'h-64', 'h-72', 'h-80', 'h-96'];
+  const sizes = ['w-48', 'w-56', 'w-60', 'w-64', 'w-72'];
+  const heights = ['h-48', 'h-56', 'h-60', 'h-64', 'h-72'];
   return `${sizes[Math.floor(Math.random() * sizes.length)]} ${heights[Math.floor(Math.random() * heights.length)]}`;
 };
-
 
 const Gallery = () => {
   useEffect(() => {
@@ -50,10 +49,9 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="bg-white/60 min-h-screen py-10 px-20">
-      <div className="container mx-auto">
-        <h1 className="text-center text-3xl md:text-5xl xl:text-7xl font-semibold mb-12">Gallery</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 px-4 md:px-0">
+    <div className="bg-white/60 min-h-screen py-10">
+      <div className="mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8 lg:gap-10 pr-28">
           {images.map((src, index) => (
             <div
               key={index}
@@ -62,11 +60,14 @@ const Gallery = () => {
             >
               <img
                 src={src}
-                alt={`${index + 1}`}
+                alt={`Gallery Image ${index + 1}`}
                 className="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-500"
               />
             </div>
           ))}
+        </div>
+        <div className='h-full w-[150px] fixed flex justify-center items-center right-0 top-0 bg-black'>
+          <h1 className="text-center pl-16 text-white rotate-90 tracking-widest z-10 text-3xl md:text-5xl xl:text-7xl font-semibold mb-12 font-josefinSlab">Gallery</h1>
         </div>
       </div>
     </div>
