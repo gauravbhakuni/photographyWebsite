@@ -2,7 +2,7 @@ import React from 'react';
 
 const AnotherSection = () => {
   return (
-    <div className='h-[114vw] md:h-[76vw]'>
+    <div id="AnotherSection" className='h-[114vw] md:h-[76vw]'>
       <div className='h-full relative flex justify-center'>
         <div className='absolute z-10 pt-[60px] text-[0.8rem] md:text-xl text-secondary'>
           <h1 className='text-center'>INTIMATE WEDDINGS</h1>

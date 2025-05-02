@@ -28,7 +28,7 @@ function Header() {
       <nav className="container mx-auto px-10 flex justify-between items-center">
         <Link to="/">
           <h1 className="text-4xl font-semibold group">
-            Peter<span className="text-black group-hover:text-blue-500">.</span>
+          The Visual Diary<span className="text-black group-hover:text-blue-500">.</span>
           </h1>
         </Link>
 
