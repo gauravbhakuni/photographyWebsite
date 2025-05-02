@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
 
 import Nav from './Nav';
 import MobileNav from './MobileNav';
@@ -29,7 +28,7 @@ function Header() {
       <nav className="container mx-auto px-10 flex justify-between items-center">
         <Link to="/">
           <h1 className="text-4xl font-semibold group">
-            bhakuni<span className="text-black group-hover:text-blue-500">.</span>
+            Peter<span className="text-black group-hover:text-blue-500">.</span>
           </h1>
         </Link>
 

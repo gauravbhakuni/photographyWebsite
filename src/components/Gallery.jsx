@@ -60,7 +60,7 @@ const Gallery = () => {
             >
               <img
                 src={src}
-                alt={`Gallery Image ${index + 1}`}
+                alt={`Gallery ${index + 1}`}
                 className="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-500"
               />
             </div>

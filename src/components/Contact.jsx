@@ -1,6 +1,16 @@
 import React from 'react';
 
 const Contact = () => {
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    alert('Message sent!');
+
+    //delete the form data
+    e.target.reset(); // Reset the form fields after submission
+  }
+
   return (
     <div className='bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8'>
       {/* Header Section */}
@@ -62,7 +72,7 @@ const Contact = () => {
       {/* Contact Form Section */}
       <section className='bg-white p-6 rounded-lg shadow-md max-w-4xl mx-auto'>
         <h2 className='text-2xl font-semibold text-gray-800 mb-6'>Send Us a Message</h2>
-        <form action='#' method='POST' className='space-y-4'>
+        <form onSubmit={handleSubmit} className='space-y-4'>
           {/* Name */}
           <div>
             <label htmlFor='name' className='block text-sm font-medium text-gray-700 mb-2'>
